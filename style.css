@@ -1,4 +1,4 @@
-/* style.css */
+/* styles.css */
 
 body, html {
     margin: 0;
@@ -48,6 +48,49 @@ h1 {
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: white; }
+}
+
+.introduction-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.introduction-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.introduction-section .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligns items to the top */
+}
+
+.introduction-section .text {
+    font-size: 1em; /* Adjust the font size as needed */
+    color: #555;
+    line-height: 1.6;
+    flex: 1;
+    padding-right: 30px; /* Adds spacing between text and photo */
+    text-align: left; /* Align the text to the left */
+    padding-left: 10px;
+
+}
+
+.introduction-section .photo {
+    flex: 0 0 auto; /* Prevents the image container from growing */
+    padding-left: 20px; /* Adds spacing between text and photo */
+    display: flex;
+    align-items: flex-start; /* Ensures the top of the image aligns with the top of the text */
+    margin-bottom: 20px; /* Add margin to separate the image and text */
+    padding-top: 20px;
+}
+
+.introduction-section .photo img {
+    max-width: 300px; /* Adjust the size as needed */
+    border-radius: 10px; /* Optional: adds rounded corners to the photo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for depth */
 }
 
 .container {
